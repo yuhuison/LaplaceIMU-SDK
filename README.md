@@ -9,7 +9,7 @@ set = IMUSet()
 set.start()
 while True:
   time.sleep(1) # 每秒执行一次读取
-  for imu in set.imus:
+  for imu in set.imus.values():
     print(imu.data)
 ```
 
